@@ -39,5 +39,5 @@ while IFS= read -r line; do
 done < "${FILE}"
 
 # deletes the temporary file
-rm -f "$FILE"
+rm -f "${FILE}"
 echo "> Backup complete"
