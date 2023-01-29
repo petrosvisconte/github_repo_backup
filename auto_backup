@@ -38,3 +38,4 @@ done < "${FILE}"
 
 # deletes the temporary file
 rm "$FILE"
+echo "> Backup complete"
