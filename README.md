@@ -1,11 +1,15 @@
 # github_repo_backup
 ## About:
-A Bash script that automatically backs up all of your personal github repositories (private and public) to your local machine. For use on any linux machine.    
+A Bash script that automatically backs up all of your personal github repositories (private and public) to your local machine. For use on any linux machine.
 ### Requirements:
 - You will first need to generate a github api token (instructions provided below)
 - You will need to modify some of the variables in the script (instructions provided below)
 - You may need to type a few commands in the CLI (instructions provided below)  
- 
+### Features:
+- Grabs the newest repository information from the user, meaning that any newely created repos will be added instantly as soon as the script is run
+- Zero maintenance required once setup
+- Will overwrite previously saved repositories to newest version so that any changes made to pre-existing repos are updated
+- Lightweight script that only uses built in bash commands
  ------------------------------------------------------------  
    
 ## Install and configuration:
