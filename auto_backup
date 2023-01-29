@@ -9,8 +9,8 @@ set -euo pipefail
 ######## CHANGE THE FOLLOWING VARIABLES BELOW #########
 AUTH_TOKEN="paste your api key here"
 BACKUP_DIR_NAME="name of the folder where you wish to save the backups"
-PATH_TO_SCRIPT_DIR="the path to the directory that contains the folder above"
-PATH_TO_BACKUP_DIR="the path to the directory that contains the auto_backup script"
+PATH_TO_SCRIPT_DIR="the path to the directory that contains the auto_backup script"
+PATH_TO_BACKUP_DIR="the path to the directory that contains BACKUP_DIR_NAME"
 GITHUB_USERNAME="your github username"
 #######################################################
 
