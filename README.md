@@ -62,6 +62,43 @@ GITHUB_USERNAME="petrosvisconte"
 #######################################################
 ```  
 
+### Executing script:
+Make the script executable
+```bash
+chmod +x /path/to/auto_backup
+```
+You can now run the script whenever you like by entering:
+```bash
+./path/to/auto_backup
+```
+### Automating the script:
+You can set the script to run at certain time intervals using whatever method you like, the following example sets the script as a crontask for automation
+```bash
+crontab -e
+```
+Append the following line to the end of the file
+- make sure to write out the full path when adding crontasks
+```bash
+@daily /full/path/to/auto_bash
+
+# using the example from before
+@daily /home/user/my_scripts/auto_bash
+```
+You can change the tag infront of the path to fit your needs
+```bash
+# runs the script every hour
+@hourly
+# runs the script every day
+@daily
+# runs the script every week
+@weekly
+# runs the script every month
+@monthly
+# runs the script every year
+@yearly
+```
+
+
 
 ## Create a new github api token
 - General instructions from github: https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token  
