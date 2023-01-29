@@ -41,14 +41,28 @@ GITHUB_USERNAME="your github username"
 
 **PATH_TO_SCRIPT_DIR:**
 - The full path to the directory where the auto_backup script is located
-- For example, if you copied the script to ~/my_scripts, then you would set this to "/home/user/my_scripts"
+- For example, if you copied the script into ~/my_scripts, then you would set this to "/home/user/my_scripts"
 
 **PATH_TO_BACKUP_DIR:**
 - The full path to the directory that contains the folder (BACKUP_DIR_NAME) where you wish to save the backups to. Do not include BACKUP_DIR_NAME in the path.
-- Using the example from BACKUP_DIR_NAME, you would set this to "/home/user/Documents/github"
+- Using the example from BACKUP_DIR_NAME, you would set this to "/home/user/Documents/github"  
+
 **GITHUB_USERNAME:**
 - Your username for github
 - For example, I would use "petrosvisconte"
+
+#### Example configuration:
+```bash
+######## CHANGE THE FOLLOWING VARIABLES BELOW #########
+AUTH_TOKEN="deieiwaeianandiapomaaazod8492nsko"
+BACKUP_DIR_NAME="my_backups"
+PATH_TO_SCRIPT_DIR="/home/user/my_scripts"
+PATH_TO_BACKUP_DIR="/home/user/Documents/github"
+GITHUB_USERNAME="petrosvisconte"
+#######################################################
+```  
+
+
 ## Create a new github api token
 - General instructions from github: https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token  
 1. Navigate to your main profile page
