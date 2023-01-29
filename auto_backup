@@ -30,12 +30,14 @@ while IFS= read -r line; do
 	if [ ! -d "${repo_path}" ]; then
 		mkdir "${repo_path}"
 	elif [ -d "${repo_path}" ]; then
-		rm -rf "${repo_path}"/{*,.*}
+		shopt -s dotglob
+		rm -rf "${repo_path}"/*
+		shopt -u dotglob
 	fi
 	git clone "https://${AUTH_TOKEN}@github.com/${GITHUB_USERNAME}/${name}.git" "${repo_path}"
 	# echo "> adding to ${name}"
 done < "${FILE}"
 
 # deletes the temporary file
-rm "$FILE"
+rm -f "$FILE"
 echo "> Backup complete"
