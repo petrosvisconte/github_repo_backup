@@ -8,14 +8,33 @@ A Bash script that automatically backs up all of your personal github repositori
 ## Install and configuration:
 **Note:** If you do not already have an api token with repository access, then follow the instructions at the [end](https://github.com/petrosvisconte/github_repo_backup/edit/main/README.md#create-a-new-github-api-token) of the README first to generate one, then come back here afterwards.  
 #### Installation:
-Clone the repository and then open the repo_backup file with your editor of choice (example code uses "vim")
-- The following example assumes that you are in your home directory
+Clone the repository and then copy the auto_backup file to the location of your choice. Please select a location for the script that will not get deleted or overwritten. 
+- The following example assumes that you are in your home directory and wish to copy the scipt to a directory named "my_scripts"
 ```bash
 git clone https://github.com/petrosvisconte/github_repo_backup.git
-vim github_repo_backup/auto_backup
+cp github_repo_backup/auto_backup ~/my_scripts
 ```
 #### Configuration:
+Now open the script with the editor of your choice (vim is being used in this example)
+```bash
+vim /path/to/where/you/saved/auto_backup
+```
 With the auto_backup script now open you will need to modify the following section:
+```bash
+######## CHANGE THE FOLLOWING VARIABLES BELOW #########
+AUTH_TOKEN="paste your api key here"
+BACKUP_DIR_NAME="name of the folder where you wish to save the backups"
+PATH_TO_SCRIPT_DIR="the path to the directory that contains the folder above"
+PATH_TO_BACKUP_DIR="the path to the directory that contains the auto_backup script"
+GITHUB_USERNAME="your github username"
+#######################################################
+```
+AUTH_TOKEN:
+- This is the api key for your personal token. It must be connected to your account and have full access to your repositories
+BACKUP_DIR_NAME:
+- This is the name of the folder where you wish to save the backups to
+- For example, if you wish to save your backup to ~/Documents/github/my_backups, then "my_backups" would be what you set this to
+PATH_TO_SCRIPT_DIR
 
 ## Create a new github api token
 - General instructions from github: https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token  
