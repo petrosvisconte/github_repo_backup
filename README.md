@@ -9,7 +9,7 @@ A Bash script that automatically backs up all of your personal github repositori
  ------------------------------------------------------------  
    
 ## Install and configuration:
-**Note:** If you do not already have an api token with repository access, then follow the instructions at the [end](https://github.com/petrosvisconte/github_repo_backup/edit/main/README.md#create-a-new-github-api-token) of the README first to generate one, then come back here afterwards.  
+**Note:** If you do not already have an api token with repository access, then follow the instructions at the [end](https://github.com/petrosvisconte/github_repo_backup#create-a-new-github-api-token) of the README first to generate one, then come back here afterwards.  
 ### Installation:
 Clone the repository and then copy the auto_backup file to the location of your choice. Please select a location for the script that will not get deleted or overwritten. 
 - The following example assumes that you are in your home directory and wish to copy the scipt to a directory named "my_scripts"
