@@ -19,12 +19,12 @@ Clone the repository and then copy the auto_backup file to the location of your 
 - The following example assumes that you are in your home directory and wish to copy the scipt to a directory named "my_scripts"
 ```bash
 git clone https://github.com/petrosvisconte/github_repo_backup.git
-cp github_repo_backup/auto_backup ~/my_scripts
+cp github_repo_backup/auto_backup.sh ~/my_scripts
 ```
 ### Configuration:
 Now open the script with the editor of your choice (vim is being used in this example)
 ```bash
-vim /path/to/where/you/saved/auto_backup
+vim /path/to/where/you/saved/auto_backup.sh
 ```
 With the auto_backup script now open you will need to modify the following section:
 ```bash
@@ -69,11 +69,11 @@ GITHUB_USERNAME="petrosvisconte"
 ### Executing script:
 Make the script executable
 ```bash
-chmod +x /path/to/auto_backup
+chmod +x /path/to/auto_backup.sh
 ```
 You can now run the script whenever you like by entering:
 ```bash
-./path/to/auto_backup
+./path/to/auto_backup.sh
 ```
 ### Automating the script:
 You can set the script to run at certain time intervals using whatever method you like, the following example sets the script as a crontask for automation
@@ -83,10 +83,10 @@ crontab -e
 Append the following line to the end of the file
 - make sure to write out the full path when adding crontasks
 ```bash
-@daily /full/path/to/auto_bash
+@daily /full/path/to/auto_backup.sh
 
 # using the example from before
-@daily /home/user/my_scripts/auto_bash
+@daily /home/user/my_scripts/auto_backup.sh
 ```
 You can change the tag infront of the path to fit your needs
 ```bash
