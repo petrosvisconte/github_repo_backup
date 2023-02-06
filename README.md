@@ -2,6 +2,7 @@
 ## About:
 A Bash script that automatically backs up all of your personal github repositories (private and public) to your local machine. For use on any linux machine.
 ### Requirements:
+- git needs to be installed
 - You will first need to generate a github api token (instructions provided below)
 - You will need to modify some of the variables in the script (instructions provided below)
 - You may need to type a few commands in the CLI (instructions provided below)  
